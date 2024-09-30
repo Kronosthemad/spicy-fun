@@ -1,2 +1,1 @@
-"# Personal_Arcive" 
-"# spicy-fun" 
+this is just a repo for random programs that anyone can add to if they want and I am taking care of the risk of it being malicious so if you want to push anything to hear it will not be detrimental if your code is not right but download at your own risk because this is a hobby and I can't keep an eye on everything that may get uploaded 
