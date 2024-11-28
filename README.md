@@ -1,1 +1,1 @@
-this is just a repo for random programs that anyone can add to if they want and I am working on an antivirus and need malware to test it. I'm care of the risk of it being malicious by running it on a VM on a sperate laptop from my daily driver so if you want to push anything to hear it will not be detrimental if your code is harmful. but download at your own risk because I don't know what may be pushed
+this is just a repo for random programs that have direct access to the is it is probably going to be mostly powershell 
