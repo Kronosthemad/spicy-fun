@@ -1,0 +1,47 @@
+$L = 'C:/requested log/log.(Get-DateTime).txt'
+$S = 'C:/requested log/'
+
+beginning{
+ function Check-Logfile {
+  if (Get-ChildItem -path $L) -eq ( $True){
+        pass
+  }
+ }
+
+ function Create-Logfile {
+  try{
+   New-PSObject -file -path 'C:/requested log/' -name 'log.(Get-DateTime).txt
+  }
+  catch{ 
+  }
+
+ function Make-Directory {
+  try{
+   New-PSObject -directory 'C:/requested log/'
+  }
+  catch
+ }
+
+ function Write-ToLog{
+  $PSItem | out-file.append -path $L
+ }
+
+ function Build-LogFile{
+  Make-Directory,
+  Create-LogFile
+ }
+  Build-LogFile
+}
+
+process{
+ Check-Logfile 
+
+ foreach PSObject in $PSItem{
+  Write-ToLog 
+ }
+}
+
+end{
+ Write-Out 'You can find your log file at ($L)'
+}
+  
